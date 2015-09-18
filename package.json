@@ -1,0 +1,28 @@
+{
+  "name": "nixbyexample",
+  "version": "0.0.0",
+  "description": "Nix by Example",
+  "main": "index.js",
+  "scripts": {
+    "gitbook": "gitbook"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WeAreWizards/nixbyexample.git"
+  },
+  "keywords": [
+    "nix",
+    "example",
+    "devops",
+    "book"
+  ],
+  "author": "We Are Wizards",
+  "bugs": {
+    "url": "https://github.com/WeAreWizards/nixbyexample/issues"
+  },
+  "homepage": "https://github.com/WeAreWizards/nixbyexample#readme",
+  "dependencies": {
+    "gitbook": "^2.4.0",
+    "gitbook-cli": "^0.3.6"
+  }
+}

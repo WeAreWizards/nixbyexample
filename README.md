@@ -1,6 +1,17 @@
 # nixbyexample
 
-Possible outline
+## Installation and running
+
+```
+$ npm install
+```
+
+```
+$ npm run gitbook build
+$ npm run gitbook serve
+```
+
+## Possible outline
 
 - What is Nix  
 -- Philosophy  
