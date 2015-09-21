@@ -22,7 +22,6 @@
   },
   "homepage": "https://github.com/WeAreWizards/nixbyexample#readme",
   "dependencies": {
-    "gitbook": "^2.4.0",
     "gitbook-cli": "^0.3.6"
   }
 }
