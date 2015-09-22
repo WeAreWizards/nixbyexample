@@ -3,14 +3,13 @@
 The simplest way to find a package is to use the web frontend on the
 NixOS website: https://nixos.org/nixos/packages.html
 
-On the command line the `nix-env` command supports not installation
-but also search:
+On the command line packages can be searched with `nix-env`:
 
 ```bash
 nix-env -qaP | grep hello
 ```
 
-The flag `-qaP` stand for `--query --available --attr-path`, telling
+The flags `-qaP` stand for `--query --available --attr-path`, telling
 `nix-env` to query all available packages, and to print their
 attribute path.
 
