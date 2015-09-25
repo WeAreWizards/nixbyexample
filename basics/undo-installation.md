@@ -1,6 +1,6 @@
 # Undo installation
 
-Nix supports atomic *rollback* of your packages to a previous state. *Rollback* is the same as undoing your last action (or actions).
+Nix supports atomic *rollback* of your packages to a previous state. *Rollback* is the same as undoing your last action (or actions). Each new set of packages is called a *generation*.
 
 We can inspect changes to our packages with `--list-generations`:
 
@@ -18,7 +18,7 @@ $ nix-env --rollback
 switching from generation 3 to 2
 ```
 
-Checking with `--list-generations` we can see that we're now the previous install (2). Note that generation 3 is still around.
+Checking with `--list-generations` we can see that we're now on the previous install (2). Note that generation 3 is still around.
 
 ```console
 $ nix-env --list-generations
@@ -27,10 +27,10 @@ $ nix-env --list-generations
  3     2015-09-24 10:49:51
 ```
 
-With generation 3 still around We can switch back to it like so:
+With generation 3 still around, we can switch back to it like so:
 
 ```console
 $ nix-env --switch-generation 3
 ```
 
-With `--switch-generation` we can in fact switch to any generation, e.g. your install fro 4 weeks ago.
+With `--switch-generation` we can in fact switch to any generation, e.g. your install from 4 weeks ago.
