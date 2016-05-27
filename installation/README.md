@@ -5,15 +5,13 @@ Nix supports Linux and OSX, but should also work on others like FreeBSD. Windows
 
 > **Note** <br>Nix installs itself in your root directory under `/nix` and can grow quite large. A fresh installation with a few packages is ~500MiB, but a long-running system with lots of packages can grow to 15-20 GiB.
 
-The current recommended way to install Nix on all platforms (apart from Archlinux, see below) is to run the following command into a terminal as your normal user (*not* root):
+The current recommended way to install Nix on all platforms is to run the following command into a terminal as your normal user (*not* root):
 
 ```bash
-bash <(curl https://nixos.org/nix/install)
+curl https://nixos.org/nix/install | sh
 ```
 
 While this is *incredibly dangerous and generally discouraged*, using a package manager implies trusting the people who package the code so in this specific case it's OK to trust the first step as well.
-
-> **Note for Archlinux users** <br>The script currently does not work on Archlinux due to https://github.com/NixOS/nix/issues/599 but there is the [nix-multiuser](https://aur.archlinux.org/packages/nix-multiuser/) package in AUR that you can install.
 
 You will see some output showing what's being downloaded, and then at the end this message:
 
@@ -37,5 +35,5 @@ And check that you have the `nix-env` command:
 
 ```
 $ nix-env --version
-nix-env (Nix) 1.10
+nix-env (Nix) 1.11.2
 ```
