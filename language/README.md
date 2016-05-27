@@ -1,10 +1,13 @@
-The Nix language is lazy and pure functional with only a small number
-of simple constructs and builtin functions.
+The Nix language is *lazy*, *purely functional* with only a small
+number of simple constructs and built-in functions.
 
-The lazy part means that the interpreter only evaluates results the
-user requested. This allows packaging 100,000 packages in a single
-expression but only evaluating a single package for installation. The
-other packages are still there but not evaluated.
+*Lazy* means that the interpreter only evaluates expressions whose
+value was requested by the user.
 
-The purely functional part means that there is no mutation and there
-are no statements. Every construct is an expression (a function).
+*Purely functional* means that there is no mutation of state and there
+are no statements. Everything is an expression.
+
+These properties make it possible to have a single expression with
+tens of thousands of packages, and then to pick out one specific one
+with its dependencies. Packages not needed to fulfil the installion
+are never evaluated due to lazyness.

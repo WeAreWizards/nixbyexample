@@ -1,15 +1,17 @@
 # REPL
 
-REPL stands for "read eval print loop". It's a convenient tool that
-reads a nix-expression and prints the evaluated result.
+Like many languages Nix has a REPL, where REPL stands for "read eval
+print loop". The REPL is convenient tool that reads a nix-expression
+and prints the evaluated result.
 
-Nix has such a REPL:
+You can install it:
 
 ```
 nix-env -iA nixpkgs.nix-repl
 ```
 
-Test that it works by running `nix-repl` and entering the simple expression `1 + 1`:
+Now test that it works by running `nix-repl` and entering the simple
+expression `1 + 1`:
 
 ```
 $ nix-repl
